@@ -60,37 +60,41 @@
         }
 
         /* 3. HERO: The Deep Cinematic Midnight Look */
-        .hero-layer {
-            height: 100vh;
-            width: 100vw;
-            /* Premium Depth: Midnight Blue to Pure Black at 70% spread */
-            background: radial-gradient(circle at center, #050a15 0%, #000000 70%) !important;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            text-align: center;
-        }
+      .hero-layer {
+    height: 100vh;
+    width: 100vw;
+    /* THE FIX: Start with a slightly brighter navy in the center (#0a192f) 
+       and force it to hit pure black (#000) by 60% of the screen width. */
+    background: radial-gradient(circle at center, #0a192f 0%, #000000 60%) !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    /* This adds a slight 'grain' or 'noise' texture often seen in premium sites */
+    background-attachment: fixed; 
+}
 
-        .hero-layer h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: clamp(2rem, 8vw, 4.5rem);
-            font-weight: 900;
-            letter-spacing: 18px;
-            text-transform: uppercase;
-            margin-bottom: 10px !important;
-        }
+.hero-layer h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-weight: 900;
+    letter-spacing: 20px; /* Nathan uses very wide letter spacing */
+    text-transform: uppercase;
+    margin-bottom: 20px !important;
+    text-shadow: 0 0 30px rgba(0,0,0,0.5); /* Adds depth to the letters */
+}
 
-        .hero-layer p {
-            font-size: 0.85rem;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            opacity: 0.6;
-            font-weight: 300; /* Thinner font for premium feel */
-            line-height: 2;
-            margin-top: 25px !important;
-        }
+.hero-layer p {
+    font-size: 0.8rem; /* Smaller text looks more high-end */
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    opacity: 0.5; /* Lowering opacity makes the background feel deeper */
+    font-weight: 300;
+    line-height: 2;
+    margin-top: 30px !important;
+}
 
         /* 4. CONTENT SECTIONS: About and Projects */
         .content-layer {
