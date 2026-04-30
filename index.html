@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     
     <style>
-        /* 1. GLOBAL RESET & BASE DEPTH */
+        /* 1. THE CORE FIX: Applying the background to the HTML/BODY level */
         * {
             margin: 0 !important;
             padding: 0 !important;
@@ -16,27 +16,31 @@
 
         html, body {
             width: 100%;
-            height: 100%;
-            background-color: #000000 !important; /* Prevents white background leaks */
+            min-height: 100%;
+            /* This is the Nathan Hoong depth */
+            background: radial-gradient(circle at center, #0a192f 0%, #000000 80%) no-repeat center center fixed !important;
+            background-size: cover !important;
+            background-color: #000 !important;
+            color: white !important; /* Forces all text on the entire site to be white */
             font-family: 'Inter', sans-serif;
             overflow-x: hidden;
             scroll-behavior: smooth;
         }
 
-        /* 2. NAVIGATION: Nathan Hoong Style Glass Bar */
+        /* 2. NAVIGATION: Dark glass look to match the theme */
         .nav-layer {
             position: fixed;
             top: 0;
             width: 100%;
             height: 70px;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
+            background: rgba(0, 0, 0, 0.7) !important; /* Darkened */
+            backdrop-filter: blur(15px);
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0 10% !important;
             z-index: 1000;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
         }
 
         .nav-logo {
@@ -45,14 +49,14 @@
             text-transform: uppercase;
             letter-spacing: 3px;
             font-size: 0.8rem;
-            border: 2px solid #000;
+            border: 2px solid white;
             padding: 5px 10px !important;
-            color: #000;
+            color: white;
         }
 
         .nav-links a {
             text-decoration: none;
-            color: #000;
+            color: white;
             font-weight: 700;
             text-transform: uppercase;
             font-size: 0.7rem;
@@ -60,89 +64,78 @@
             margin-left: 30px !important;
         }
 
-        /* 3. HERO: The "Spotlight" Cinematic Background */
-        .hero-layer {
-            height: 100vh;
+        /* 3. SECTIONS: Every section is now TRANSPARENT to let the gradient show */
+        section {
+            background: transparent !important; /* Removed the white boxes */
             width: 100vw;
-            /* Deep Space Gradient: Navy to Pure Black at 60% spread */
-            background: radial-gradient(circle at center, #0a192f 0%, #000000 60%) !important;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            color: #fff;
+            justify-content: center;
+            padding: 100px 10% !important;
+        }
+
+        .hero-layer {
+            height: 100vh;
             text-align: center;
-            position: relative;
         }
 
         .hero-layer h1 {
             font-family: 'Montserrat', sans-serif;
             font-size: clamp(2.2rem, 8vw, 4.5rem);
             font-weight: 900;
-            letter-spacing: 18px; /* High-end engineering spacing */
+            letter-spacing: 18px;
             text-transform: uppercase;
-            margin-bottom: 15px !important;
+            margin-bottom: 20px !important;
         }
 
         .hero-layer p {
-            font-size: 0.8rem;
-            letter-spacing: 6px;
+            font-size: 0.85rem;
+            letter-spacing: 5px;
             text-transform: uppercase;
-            opacity: 0.5;
+            opacity: 0.6;
             font-weight: 300;
-            line-height: 2.2;
-            margin-top: 25px !important;
-        }
-
-        /* 4. CONTENT: The Clean White Transition */
-        .content-layer {
-            background-color: #ffffff !important;
-            width: 100vw;
-            padding: 140px 10% !important;
-            color: #000;
-            position: relative;
-            z-index: 5;
+            line-height: 2;
         }
 
         .section-title {
             font-family: 'Montserrat', sans-serif;
-            font-size: 2.5rem;
-            text-align: center;
-            letter-spacing: 12px;
+            font-size: 2.2rem;
+            letter-spacing: 10px;
             text-transform: uppercase;
-            margin-bottom: 80px !important;
+            margin-bottom: 60px !important;
+            text-align: center;
         }
 
         .about-text {
             max-width: 800px;
-            margin: 0 auto !important;
             text-align: center;
-            line-height: 2;
+            line-height: 2.2;
             font-size: 1.1rem;
-            color: #333;
+            opacity: 0.8;
         }
 
-        /* 5. PROJECTS: Professional Grid Fix */
+        /* 4. PROJECTS: Grid on Dark Background */
         .project-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 60px;
+            gap: 50px;
             max-width: 1100px;
-            margin: 60px auto 0 !important;
+            width: 100%;
+            margin-top: 40px !important;
         }
 
         .project-card {
-            text-align: left;
             text-decoration: none;
             color: inherit;
-            transition: transform 0.3s ease;
+            transition: 0.3s;
         }
 
         .project-image-container {
             width: 100%;
             aspect-ratio: 1 / 1;
-            background-color: #f9f9f9;
-            border: 1px solid #eee;
+            background-color: rgba(255,255,255,0.05); /* Slight tint for depth */
+            border: 1px solid rgba(255,255,255,0.1);
             margin-bottom: 25px !important;
             overflow: hidden;
             display: flex;
@@ -153,13 +146,13 @@
         .project-card img {
             width: 100%;
             height: 100%;
-            object-fit: contain; /* Keeps your robot fully visible */
-            padding: 15px;
-            transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            object-fit: contain; /* Full robot visible */
+            padding: 20px;
+            transition: transform 0.5s ease;
         }
 
         .project-card:hover img {
-            transform: scale(1.08);
+            transform: scale(1.05);
         }
 
         .project-card h3 {
@@ -173,12 +166,12 @@
 
         .project-card p {
             font-size: 0.9rem;
-            color: #666;
+            opacity: 0.6;
             line-height: 1.6;
         }
 
         .arrow-down {
-            margin-top: 80px !important;
+            margin-top: 50px !important;
             font-size: 1.5rem;
             opacity: 0.3;
             animation: bounce 2s infinite;
@@ -196,7 +189,7 @@
     <nav class="nav-layer">
         <div class="nav-logo">PORTFOLIO</div>
         <div class="nav-links">
-            <a href="#work">About</a>
+            <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </div>
@@ -209,14 +202,14 @@
         <div class="arrow-down">↓</div>
     </section>
 
-    <section class="content-layer" id="work">
+    <section id="about">
         <h2 class="section-title">About Me</h2>
         <p class="about-text">
             As a mechanical engineer with a passion for problem-solving and effective communication, I have gained experience in various industries and engineering fields. My degree has equipped me with a versatile skillset including CAD modeling, structural analysis, and rapid prototyping.
         </p>
     </section>
 
-    <section class="content-layer" id="projects" style="background-color: #fafafa !important; border-top: 1px solid #eee;">
+    <section id="projects">
         <h2 class="section-title">Featured Projects</h2>
         
         <div class="project-grid">
@@ -227,8 +220,7 @@
                 <h3>GLAUKOS CAPSTONE</h3>
                 <p>Designed a high-cycle fatigue testing fixture for medical device components using SolidWorks and FEA analysis.</p>
             </a>
-            
-            </div>
+        </div>
     </section>
 
 </body>
