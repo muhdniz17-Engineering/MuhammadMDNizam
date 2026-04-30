@@ -1,24 +1,23 @@
-<style>
-  body { background-color: #0d1117; color: #c9d1d9; } /* Dark Grey/Black Background */
-  header { background: linear-gradient(135deg, #041630 0%, #162a47 100%); } /* Deep Navy Header */
-  h1, h2, h3 { color: #58a6ff; } /* Engineering Blue Accents */
-  table { border: 1px solid #30363d; background-color: #161b22; } /* Dark Grey Project Cards */
-</style>
-# MUHAMMAD MD NIZAM
-## Mechanical Engineering Portfolio
-**Design • Analysis • Prototyping**
+<div style="background: linear-gradient(to bottom, #1a1a1a, #333333); padding: 100px 20px; color: white; text-align: center;">
+  <h1 style="font-family: Arial, sans-serif; letter-spacing: 5px; font-size: 3rem;">ENGINEERING PORTFOLIO: NIZAM</h1>
+  <p style="font-style: italic; opacity: 0.8;">A portfolio showcasing mechanical design and structural analysis projects.</p>
+  <div style="margin-top: 30px; font-size: 2rem;">↓</div>
+</div>
 
----
+<div style="background: white; color: #333; padding: 50px 10%; line-height: 1.6;">
 
-### 👤 ABOUT ME
+<h2 align="center" style="letter-spacing: 3px; margin-bottom: 40px;">ABOUT ME</h2>
+
 As a mechanical engineer with a passion for problem-solving and effective communication, I have gained experience in various industries and engineering fields. My degree has equipped me with a versatile skillset including CAD modeling, structural analysis, and rapid prototyping.
 
 ---
 
-### 🚀 FEATURED PROJECTS
+<h2 align="center" style="letter-spacing: 3px;">PROJECTS</h2>
 
 | GLAUKOS SENIOR CAPSTONE | SURGICAL TOOL DESIGN |
 | :--- | :--- |
-| <img src="your-image-1.png" width="100%"> | <img src="your-image-2.png" width="100%"> |
+| <img src="glaukos_poster.jpg" width="100%"> | <img src="surgical_tool_render.png" width="100%"> |
 | **Objective:** Develop a test fixture for fatigue testing. | **Objective:** Design an interbody surgical tool for PLIF. |
-| [**VIEW PROJECT DETAILS**](#) | [**VIEW PROJECT DETAILS**](#) |
+| [**VIEW REPORT**](link) | [**VIEW REPORT**](link) |
+
+</div>
