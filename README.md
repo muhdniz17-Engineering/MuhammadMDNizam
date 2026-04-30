@@ -1,20 +1,18 @@
-<div align="center">
-  <h1>MECHANICAL ENGINEERING PORTFOLIO</h1>
-  <p><b>Muhammad MD Nizam</b></p>
-  <p>Design • Analysis • Prototyping</p>
-</div>
+# Muhammad MD Nizam
+## Mechanical Engineering Portfolio
+[LinkedIn](your-link) | [Email](mailto:your-email) | [Resume](your-link)
 
 ---
 
-## 👤 About Me
-As a mechanical engineer with a passion for problem-solving and effective communication, I have gained experience in various industries and engineering fields. My degree has equipped me with a versatile skillset that can be applied to many different branches of engineering.
+### 👤 About Me
+As a mechanical engineer with a passion for problem-solving and effective communication, I have gained experience in various industries and engineering fields. My degree has equipped me with a versatile skillset including CAD modeling, structural analysis, and rapid prototyping.
 
 ---
 
-## 🚀 Featured Projects
+### 🚀 Featured Projects
 
 | GLAUKOS SENIOR CAPSTONE | SURGICAL TOOL DESIGN |
 | :--- | :--- |
-| <img src="https://via.placeholder.com/400x300?text=Project+Image+1" width="100%"> | <img src="https://via.placeholder.com/400x300?text=Project+Image+2" width="100%"> |
-| **Objective:** To develop a test fixture for fatigue testing for product development. | **Objective:** To design an interbody surgical tool used for PLIF procedures. |
-| [**View Full Report**](#) | [**View Full Report**](#) |
+| <img src="your-image-1.jpg" width="100%"> | <img src="your-image-2.jpg" width="100%"> |
+| **Objective:** Develop a test fixture for fatigue testing. | **Objective:** Design an interbody surgical tool for PLIF. |
+| [View Project Details](#) | [View Project Details](#) |
