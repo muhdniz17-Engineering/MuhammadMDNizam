@@ -1,5 +1,5 @@
 <div style="background: linear-gradient(to bottom, #1a1a1a, #333333); padding: 100px 20px; color: white; text-align: center;">
-  <h1 style="font-family: Arial, sans-serif; letter-spacing: 5px; font-size: 3rem;">ENGINEERING PORTFOLIO: NIZAM</h1>
+<h1 style="font-family: sans-serif; font-weight: 900; letter-spacing: 10px; font-size: 3.5rem; text-transform: uppercase; margin: 0;">MUHAMMAD MD NIZAM</h1>
   <p style="font-style: italic; opacity: 0.8;">A portfolio showcasing mechanical design and structural analysis projects.</p>
   <div style="margin-top: 30px; font-size: 2rem;">↓</div>
 </div>
