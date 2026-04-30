@@ -64,14 +64,17 @@
         /* THE FIX: The Nathan Hoong White Frame */
         .hero-layer h1 {
             font-family: 'Montserrat', sans-serif;
-            font-size: clamp(1.5rem, 5vw, 3.2rem); /* Slightly smaller so the box isn't too massive */
-            letter-spacing: 15px; 
+            font-size: clamp(1.5rem, 4vw, 3rem);
+            letter-spacing: 10px; 
             text-transform: uppercase;
-            border: 3px solid #ffffff; /* This creates the frame */
-            /* Pro-tip: Right padding is smaller (5px) because letter-spacing adds invisible space after the last letter */
-            padding: 20px 5px 20px 20px; 
-            display: inline-block; /* Makes the box hug the text tightly */
-            margin-bottom: 10px !important;
+            border: 3px solid #ffffff; 
+            
+            /* THE FIX: Top 20px | Right 20px | Bottom 20px | Left 30px */
+            /* This perfectly counter-balances the invisible 10px letter-spacing on the right! */
+            padding: 20px 20px 20px 30px !important; 
+            
+            display: inline-block; 
+            margin-bottom: 15px !important;
         }
 
         /* 4. THE FRAME-IN-A-FRAME */
