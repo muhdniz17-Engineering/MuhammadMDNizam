@@ -11,13 +11,14 @@
         /* 1. THE FOUNDATION: Darker Navy Blue Background */
         * { margin: 0 !important; padding: 0 !important; box-sizing: border-box !important; }
 
-        html, body {
+       html, body {
             width: 100%;
             min-height: 100vh !important; 
             height: auto !important; 
-            background-color: #000 !important; 
-            /* THE FIX: Bumped from #11264c to #1b3b6d for a slightly brighter navy */
-            background-image: radial-gradient(circle at center, #1b3b6d 0%, #000000 90%) !important;
+            /* Changed the fallback background color to match the new dark edge */
+            background-color: #081221 !important; 
+            /* THE FIX: Changed the outer edge from #000000 to #081221 and pushed the fade to 100% */
+            background-image: radial-gradient(circle at center, #1b3b6d 0%, #081221 100%) !important;
             background-attachment: fixed !important; 
             font-family: 'Inter', sans-serif;
             color: white;
