@@ -6,155 +6,171 @@
     <title>Muhammad MD Nizam | Engineering Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     
-   <style>
-    /* 1. THE FOUNDATION: Deep Dark Base */
-    html, body {
-        margin: 0 !important;
-        padding: 0 !important;
-        width: 100%;
-        background-color: #000 !important;
-        /* The Nathan Spotlight: Tighter center, deeper edges */
-        background: radial-gradient(circle at center, #0a192f 0%, #000000 70%) fixed !important;
-        font-family: 'Inter', sans-serif;
-        color: white;
-        overflow-x: hidden;
-        scroll-behavior: smooth;
-    }
+    <style>
+        /* 1. THE FOUNDATION */
+        * { margin: 0 !important; padding: 0 !important; box-sizing: border-box !important; }
 
-    /* 2. NAVIGATION: Dark and Minimal */
-    .nav-layer {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 70px;
-        background: rgba(0, 0, 0, 0.8);
-        backdrop-filter: blur(10px);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 10% !important;
-        z-index: 1000;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
+        html, body {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
 
-    .nav-logo {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 900;
-        letter-spacing: 3px;
-        font-size: 0.8rem;
-        border: 2px solid #fff;
-        padding: 5px 10px !important;
-        color: #fff;
-    }
+        /* 2. THE SECRET SAUCE: Fixed Cinematic Background */
+        .bg-spotlight {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, #0a192f 0%, #000000 70%) !important;
+            z-index: -1; /* Keeps it behind everything */
+        }
 
-    .nav-links a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 0.7rem;
-        letter-spacing: 2px;
-        margin-left: 30px !important;
-    }
+        /* 3. NAVIGATION */
+        .nav-layer {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 70px;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(15px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10% !important;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
 
-    /* 3. HERO: Transparent so it shows the background */
-    .hero-layer {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+        .nav-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            letter-spacing: 3px;
+            font-size: 0.8rem;
+            border: 2px solid #fff;
+            padding: 5px 10px !important;
+            color: #fff;
+            text-transform: uppercase;
+        }
 
-    .hero-layer h1 {
-        font-family: 'Montserrat', sans-serif;
-        font-size: clamp(2rem, 8vw, 4.5rem);
-        font-weight: 900;
-        letter-spacing: 18px; /* Nathan's wide spacing look */
-        text-transform: uppercase;
-    }
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            margin-left: 30px !important;
+        }
 
-    .hero-layer p {
-        font-size: 0.85rem;
-        letter-spacing: 5px;
-        opacity: 0.5;
-        font-weight: 300;
-        margin-top: 25px !important;
-    }
+        /* 4. HERO SECTION (Transparent) */
+        .hero-layer {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            background: transparent !important;
+        }
 
-    /* 4. THE NATHAN CONTRAST: High-End White Content */
-    .content-layer {
-        background-color: #ffffff !important; /* Stark white sheet */
-        color: #000 !important; /* Black text for readability on white */
-        width: 100vw;
-        padding: 120px 10% !important;
-        position: relative;
-        z-index: 10;
-        /* Subtle shadow to make the white part look like it's "above" the black */
-        box-shadow: 0 -20px 50px rgba(0,0,0,0.5); 
-    }
+        .hero-layer h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(2rem, 8vw, 4.5rem);
+            font-weight: 900;
+            letter-spacing: 18px;
+            text-transform: uppercase;
+        }
 
-    .section-title {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 2.2rem;
-        text-align: center;
-        letter-spacing: 12px;
-        text-transform: uppercase;
-        margin-bottom: 80px !important;
-    }
+        .hero-layer p {
+            font-size: 0.85rem;
+            letter-spacing: 5px;
+            opacity: 0.5;
+            margin-top: 25px !important;
+        }
 
-    .about-text {
-        max-width: 800px;
-        margin: 0 auto !important;
-        text-align: center;
-        line-height: 2.2;
-        font-size: 1.1rem;
-        color: #333;
-    }
+        /* 5. THE NATHAN CONTRAST: The White Sheet */
+        .white-content-sheet {
+            background-color: #ffffff !important;
+            color: #000 !important;
+            width: 100vw;
+            padding: 120px 10% !important;
+            position: relative;
+            z-index: 10;
+            box-shadow: 0 -20px 50px rgba(0,0,0,0.5); /* Shadow makes it pop */
+        }
 
-    /* 5. PROJECTS: Fixed Square Image Grid */
-    .project-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 60px;
-        max-width: 1100px;
-        margin: 0 auto !important;
-    }
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            text-align: center;
+            letter-spacing: 12px;
+            text-transform: uppercase;
+            margin-bottom: 60px !important;
+        }
 
-    .project-card {
-        text-align: left;
-        text-decoration: none;
-        color: inherit;
-    }
+        .about-text {
+            max-width: 800px;
+            margin: 0 auto !important;
+            text-align: center;
+            line-height: 2.2;
+            font-size: 1.1rem;
+            color: #333;
+        }
 
-    .project-image-container {
-        width: 100%;
-        aspect-ratio: 1 / 1;
-        background-color: #f9f9f9;
-        border: 1px solid #eee;
-        margin-bottom: 25px !important;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+        /* 6. PROJECTS GRID */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 60px;
+            max-width: 1100px;
+            margin: 40px auto 0 !important;
+        }
 
-    .project-card img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain; /* Full machine visible */
-        padding: 20px;
-        transition: transform 0.5s ease;
-    }
+        .project-card {
+            text-decoration: none;
+            color: inherit;
+        }
 
-    .project-card:hover img {
-        transform: scale(1.05);
-    }
-</style>
-    
+        .project-image-container {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background-color: #f9f9f9;
+            border: 1px solid #eee;
+            margin-bottom: 25px !important;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Full robot visible */
+            padding: 20px;
+            transition: transform 0.5s ease;
+        }
+
+        .project-card:hover img { transform: scale(1.05); }
+
+        .project-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    </style>
 </head>
 <body>
+
+    <div class="bg-spotlight"></div>
 
     <nav class="nav-layer">
         <div class="nav-logo">PORTFOLIO</div>
@@ -167,31 +183,26 @@
 
     <section class="hero-layer">
         <h1>MUHAMMAD MD NIZAM</h1>
-        <p>Mechanical Engineer <br> 
-           Engineering Projects & Global Photography</p>
-        <div class="arrow-down">↓</div>
+        <p>Mechanical Engineer <br> Engineering Projects & Photography</p>
     </section>
 
-    <section id="about">
+    <div class="white-content-sheet" id="about">
         <h2 class="section-title">About Me</h2>
         <p class="about-text">
             As a mechanical engineer with a passion for problem-solving and effective communication, I have gained experience in various industries and engineering fields. My degree has equipped me with a versatile skillset including CAD modeling, structural analysis, and rapid prototyping.
         </p>
-    </section>
 
-    <section id="projects">
-        <h2 class="section-title">Featured Projects</h2>
-        
+        <h2 class="section-title" id="projects" style="margin-top: 120px !important;">Featured Projects</h2>
         <div class="project-grid">
             <a href="projects/glaukos.html" class="project-card">
                 <div class="project-image-container">
                     <img src="MAE3ROBOT.jpg" alt="MAE3 Robot">
                 </div>
                 <h3>GLAUKOS CAPSTONE</h3>
-                <p>Designed a high-cycle fatigue testing fixture for medical device components using SolidWorks and FEA analysis.</p>
+                <p style="margin-top:10px; color:#666; font-size:0.9rem;">Designed a high-cycle fatigue testing fixture for medical device components using SolidWorks and FEA analysis.</p>
             </a>
         </div>
-    </section>
+    </div>
 
 </body>
 </html>
