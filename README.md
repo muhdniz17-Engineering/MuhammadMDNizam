@@ -1,3 +1,9 @@
+<style>
+  body { background-color: #0d1117; color: #c9d1d9; } /* Dark Grey/Black Background */
+  header { background: linear-gradient(135deg, #041630 0%, #162a47 100%); } /* Deep Navy Header */
+  h1, h2, h3 { color: #58a6ff; } /* Engineering Blue Accents */
+  table { border: 1px solid #30363d; background-color: #161b22; } /* Dark Grey Project Cards */
+</style>
 # MUHAMMAD MD NIZAM
 ## Mechanical Engineering Portfolio
 **Design • Analysis • Prototyping**
