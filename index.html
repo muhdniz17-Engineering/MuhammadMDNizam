@@ -1,72 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Muhammad MD Nizam Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad MD Nizam | Portfolio</title>
     <style>
-        body, html { margin: 0; padding: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+        body { margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; background: #ffffff; }
         
-        /* THE BLACK HEADER (The vibe you want) */
+        /* DARK HEADER SECTION */
         .hero {
-            background-color: #000000;
-            color: #ffffff;
-            padding: 120px 20px;
+            background: linear-gradient(180deg, #000000 0%, #1a1a1a 100%);
+            color: white;
+            padding: 100px 20px;
             text-align: center;
-            border-bottom: 1px solid #333;
         }
         
         .hero h1 {
             font-size: 3.5rem;
-            font-weight: 900;
-            letter-spacing: 12px;
+            font-weight: 900; /* Super Bold */
+            letter-spacing: 12px; /* Wide spacing like the example */
             text-transform: uppercase;
             margin: 0;
         }
 
         .hero p {
-            font-size: 1.1rem;
             letter-spacing: 4px;
-            opacity: 0.7;
+            opacity: 0.6;
             margin-top: 20px;
             text-transform: uppercase;
+            font-size: 0.9rem;
         }
 
-        /* THE WHITE BODY */
-        .content {
-            background-color: #ffffff;
-            color: #333333;
-            padding: 80px 15%;
-            line-height: 1.8;
+        /* WHITE CONTENT SECTION */
+        .main-content {
+            padding: 60px 10%;
+            max-width: 900px;
+            margin: 0 auto;
+            color: #333;
             text-align: center;
         }
 
         .section-title {
-            font-size: 1.8rem;
             letter-spacing: 5px;
             font-weight: 800;
             text-transform: uppercase;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
-        /* PROJECT GRID */
         .project-grid {
             display: flex;
-            gap: 50px;
-            justify-content: center;
+            gap: 30px;
             margin-top: 50px;
-            flex-wrap: wrap;
-        }
-
-        .project-card {
-            flex: 1;
-            min-width: 300px;
             text-align: left;
         }
 
-        .project-card img {
-            width: 100%;
-            border: 1px solid #eee;
-            margin-bottom: 15px;
-        }
+        .project { flex: 1; }
+        .project img { width: 100%; border: 1px solid #ddd; border-radius: 4px; }
     </style>
 </head>
 <body>
@@ -76,26 +65,27 @@
         <p>Mechanical Engineering Portfolio</p>
     </div>
 
-    <div class="content">
+    <div class="main-content">
         <h2 class="section-title">About Me</h2>
-        <p>As a mechanical engineer with a passion for problem-solving and effective communication, I have gained experience in various industries and engineering fields.</p>
+        <p>As a mechanical engineer with a passion for problem-solving and effective communication, I have gained experience in various industries and engineering fields. My degree has equipped me with a versatile skillset including CAD modeling, structural analysis, and rapid prototyping.</p>
         
         <hr style="margin: 60px 0; border: 0; border-top: 1px solid #eee;">
 
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title">Featured Projects</h2>
         <div class="project-grid">
-            <div class="project-card">
+            <div class="project">
                 <h3>GLAUKOS CAPSTONE</h3>
-                <img src="your-image.jpg">
+                <img src="glaukos.jpg" alt="Upload glaukos.jpg to your repo">
                 <p><b>Objective:</b> Develop a test fixture for fatigue testing.</p>
             </div>
-            <div class="project-card">
+            <div class="project">
                 <h3>SURGICAL TOOL</h3>
-                <img src="your-image.jpg">
+                <img src="surgical.jpg" alt="Upload surgical.jpg to your repo">
                 <p><b>Objective:</b> Design an interbody surgical tool for PLIF.</p>
             </div>
         </div>
     </div>
 
 </body>
+</html>
 </html>
