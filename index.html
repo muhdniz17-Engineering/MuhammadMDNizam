@@ -13,9 +13,12 @@
 
         html, body {
             width: 100%;
-            background-color: #000; 
-            /* THE FIX: Darkened the center blue to a deep navy (#0a192f) fading to pure black */
-            background: radial-gradient(circle at center, #0a192f 0%, #000000 90%) fixed !important;
+            min-height: 100vh !important; 
+            height: auto !important; 
+            background-color: #000 !important; 
+            /* THE FIX: Changed #0a192f to #11264c for a slightly lighter dark blue */
+            background-image: radial-gradient(circle at center, #11264c 0%, #000000 90%) !important;
+            background-attachment: fixed !important; 
             font-family: 'Inter', sans-serif;
             color: white;
             overflow-x: hidden;
