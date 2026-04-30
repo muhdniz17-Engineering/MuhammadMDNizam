@@ -3,109 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad MD Nizam Portfolio</title>
+    <title>MUHAMMAD MD NIZAM | Portfolio</title>
     <style>
-        /* This removes the annoying white borders entirely */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body { font-family: 'Inter', -apple-system, sans-serif; background-color: #ffffff; color: #1a1a1a; }
+        /* CRITICAL: This removes the GitHub white margins */
+        body, html { 
+            margin: 0 !important; 
+            padding: 0 !important; 
+            overflow-x: hidden;
+            background-color: #000; /* Sets background to black immediately */
+        }
 
-        /* LAYER 1: THE BIG DARK TOP SECTION */
-        .hero-layer {
+        /* THE BLACK CINEMATIC LAYER */
+        .hero-section {
             background: linear-gradient(180deg, #000000 0%, #1a1a1a 100%);
-            width: 100%;
-            min-height: 70vh; /* Fills 70% of the screen height */
+            width: 100vw;
+            height: 100vh; /* Full screen height */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             color: white;
-            padding: 40px;
+            text-align: center;
         }
 
-        .hero-layer h1 {
-            font-size: 3.5rem;
+        .hero-section h1 {
+            font-family: 'Arial Black', sans-serif;
             font-weight: 900;
-            letter-spacing: 12px;
+            font-size: clamp(2rem, 8vw, 4.5rem); /* Responsive size */
+            letter-spacing: 15px;
             text-transform: uppercase;
-            text-align: center;
-            margin-bottom: 20px;
+            margin: 0;
         }
 
-        .hero-layer p {
-            letter-spacing: 4px;
-            opacity: 0.7;
-            font-size: 1rem;
-            text-transform: uppercase;
-        }
-
-        /* LAYER 2: THE CLEAN WHITE CONTENT SECTION */
-        .content-layer {
-            width: 100%;
-            padding: 80px 10%;
-            background: white;
-        }
-
-        .section-title {
-            text-align: center;
+        .hero-section p {
+            font-family: Arial, sans-serif;
             letter-spacing: 5px;
-            font-weight: 800;
+            opacity: 0.6;
+            margin-top: 25px;
+            text-transform: uppercase;
+        }
+
+        /* THE WHITE CONTENT LAYER */
+        .white-layer {
+            background-color: #ffffff;
+            width: 100vw;
+            padding: 100px 10%;
+            color: #1a1a1a;
+            box-sizing: border-box;
+        }
+
+        .section-header {
+            font-family: 'Arial Black', sans-serif;
+            text-align: center;
+            letter-spacing: 8px;
             text-transform: uppercase;
             margin-bottom: 50px;
         }
-
-        /* PROJECT GRID */
-        .grid {
-            display: flex;
-            gap: 40px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .card {
-            flex: 1;
-            min-width: 350px;
-            max-width: 500px;
-        }
-
-        .card img {
-            width: 100%;
-            border: 1px solid #eee;
-            transition: transform 0.3s ease;
-        }
-
-        .card img:hover { transform: scale(1.02); }
     </style>
 </head>
 <body>
 
-    <div class="hero-layer">
+    <div class="hero-section">
         <h1>MUHAMMAD MD NIZAM</h1>
         <p>Mechanical Engineering Portfolio</p>
-        <div style="margin-top: 60px; font-size: 2rem; opacity: 0.3;">↓</div>
+        <div style="margin-top: 50px; font-size: 2rem; opacity: 0.3;">↓</div>
     </div>
 
-    <div class="content-layer">
-        <h2 class="section-title">About Me</h2>
-        <p style="max-width: 800px; margin: 0 auto; text-align: center; line-height: 1.8;">
-            As a mechanical engineer with a passion for problem-solving and effective communication, I have gained experience in various industries and engineering fields. My degree has equipped me with a versatile skillset including CAD modeling, structural analysis, and rapid prototyping.
+    <div class="white-layer">
+        <h2 class="section-header">About Me</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto; line-height: 1.8; font-size: 1.1rem;">
+            As a mechanical engineer with a passion for problem-solving and effective communication, I have gained experience in various industries and engineering fields.
         </p>
-
-        <hr style="margin: 80px 0; border: 0; border-top: 1px solid #eee;">
-
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>GLAUKOS CAPSTONE</h3>
-                <img src="glaukos.jpg" alt="Project 1">
-                <p style="margin-top: 15px;"><b>Objective:</b> Fatigue testing fixture design.</p>
-            </div>
-            <div class="card">
-                <h3>SURGICAL TOOL</h3>
-                <img src="surgical.jpg" alt="Project 2">
-                <p style="margin-top: 15px;"><b>Objective:</b> Interbody tool for PLIF procedures.</p>
-            </div>
-        </div>
     </div>
 
 </body>
