@@ -60,17 +60,27 @@
 
         /* 3. HERO: The Cinematic Background Layer */
         .hero-layer {
-            height: 100vh;
-            width: 100vw;
-            /* THE NATHAN HOONG SPOTLIGHT EFFECT */
-            background: radial-gradient(circle at center, #444444 0%, #000000 80%) !important;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            text-align: center;
-        }
+    height: 100vh;
+    width: 100vw;
+    /* CINEMATIC BLUE GRADIENT: Deep Navy to Midnight Black */
+    background: radial-gradient(circle at center, #0a192f 0%, #020c1b 100%) !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-layer p {
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    font-weight: 400;
+    line-height: 1.8; /* Adds space between your two lines */
+    margin-top: 25px !important;
+}
 
         .hero-layer h1 {
             font-family: 'Montserrat', sans-serif;
@@ -79,14 +89,6 @@
             letter-spacing: 18px; /* High-end spacing */
             text-transform: uppercase;
             margin-bottom: 20px !important;
-        }
-
-        .hero-layer p {
-            font-size: 1rem;
-            letter-spacing: 6px;
-            text-transform: uppercase;
-            opacity: 0.5;
-            font-weight: 400;
         }
 
         .arrow-down {
