@@ -143,10 +143,10 @@
             display: block;
         }
 
-        /* 6. PROCESS CARDS (Now 3 Columns!) */
+        /* 6. PROCESS CARDS (Now a 2x2 Grid!) */
         .process-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); 
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
             gap: 15px;
             margin-top: 20px !important;
         }
@@ -161,7 +161,7 @@
 
         .process-card h3 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 0.7rem;
+            font-size: 0.75rem; /* Slightly larger text since we have more room per card now */
             text-transform: uppercase;
             margin-bottom: 10px !important;
             color: #111;
@@ -177,7 +177,7 @@
         }
 
         .image-caption {
-            font-size: 0.7rem;
+            font-size: 0.75rem;
             color: #666; 
             line-height: 1.4;
         }
@@ -209,7 +209,7 @@
                 padding: 20px 20px !important;
             }
             .process-grid {
-                grid-template-columns: 1fr; /* Stacks all 3 process cards vertically on phones */
+                grid-template-columns: 1fr; /* Stacks all 4 process cards vertically on phones */
             }
             .gallery-grid {
                 grid-template-columns: 1fr; /* Stacks gallery photos on phone */
@@ -224,7 +224,7 @@
     </nav>
 
     <section class="hero-layer">
-        <h1>MAE 3 ROBOT COMPETITION</h1>
+        <h1>MAE 3 ROBOT</h1>
         <p>Design, Manufacturing & Competition Phase</p>
     </section>
 
@@ -244,16 +244,17 @@
             <p class="body-text">Overview of the specific components manufactured for this robot.</p>
             
             <div class="process-grid">
-                <div class="process-card">
-                    <h3>1. Drivetrain</h3>
-                    <img src="drivetrain-photo.jpg" alt="Drivetrain Assembly" class="process-image">
-                    <p class="image-caption">Description of the drivetrain manufacturing step, noting material choices or specific machining operations.</p>
-                </div>
                 
                 <div class="process-card">
-                    <h3>2. Pusher Mech</h3>
+                    <h3>1. Pusher Mech</h3>
                     <img src="pusher-mech-photo.jpg" alt="Pusher Mechanism" class="process-image">
                     <p class="image-caption">Details on the pusher mechanism design, actuation method, and integration with the chassis.</p>
+                </div>
+
+                <div class="process-card">
+                    <h3>2. Drivetrain</h3>
+                    <img src="drivetrain-photo.jpg" alt="Drivetrain Assembly" class="process-image">
+                    <p class="image-caption">Description of the drivetrain manufacturing step, noting material choices or specific machining operations.</p>
                 </div>
 
                 <div class="process-card">
@@ -261,6 +262,13 @@
                     <img src="loading-mech-photo.jpg" alt="Loading Mechanism" class="process-image">
                     <p class="image-caption">Description of the loading mechanism. Discuss fixturing required or specific tolerances hit during assembly.</p>
                 </div>
+
+                <div class="process-card">
+                    <h3>4. Egg Grabber</h3>
+                    <img src="egg-grabber-photo.jpg" alt="Egg Grabber" class="process-image">
+                    <p class="image-caption">Description of the egg grabber mechanism, explaining how it secures the bonus points.</p>
+                </div>
+
             </div>
 
             <h2 class="section-title">Competition Gallery</h2>
