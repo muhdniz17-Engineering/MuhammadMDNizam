@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     
     <style>
-        /* 1. FOUNDATION (Matches Homepage exactly) */
+        /* 1. FOUNDATION */
         * { margin: 0 !important; padding: 0 !important; box-sizing: border-box !important; }
 
         html, body {
@@ -47,15 +47,15 @@
             text-transform: uppercase;
             text-decoration: none;
             color: white;
+            transition: 0.3s ease;
         }
 
         .nav-logo:hover {
             background-color: white;
             color: black;
-            transition: 0.3s ease;
         }
 
-        /* 3. HERO (Scaled down to match homepage) */
+        /* 3. HERO */
         .hero-layer {
             height: 40vh; 
             display: flex;
@@ -85,7 +85,7 @@
             margin-top: 8px !important;
         }
 
-        /* 4. THE FRAME (Scaled down) */
+        /* 4. THE FRAME */
         .floating-card-container {
             width: 100%;
             display: flex;
@@ -107,7 +107,7 @@
         .section-title {
             font-family: 'Montserrat', sans-serif;
             font-size: 0.95rem; 
-            text-align: left; /* Aligned left for detail pages */
+            text-align: left; 
             letter-spacing: 1.5px;
             text-transform: uppercase;
             margin-bottom: 15px !important;
@@ -127,7 +127,23 @@
             margin-bottom: 15px !important;
         }
 
-        /* 5. PROCESS CARDS (For manufacturing/design steps) */
+        /* 5. OVERVIEW ASSEMBLY IMAGE */
+        .overview-image-container {
+            width: 100%;
+            margin-top: 15px !important;
+            margin-bottom: 35px !important; 
+        }
+        
+        .overview-image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            border: 1px solid #eaeaea; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            display: block;
+        }
+
+        /* 6. PROCESS CARDS (For manufacturing/design steps) */
         .process-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -166,7 +182,7 @@
             line-height: 1.4;
         }
 
-        /* 6. GENERAL GALLERY GRID */
+        /* 7. GENERAL GALLERY GRID */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -184,9 +200,10 @@
             width: 100%;
             height: 100%;
             object-fit: cover; 
+            border-radius: 4px;
         }
 
-        /* MOBILE RESPONSIVENESS */
+        /* 8. MOBILE RESPONSIVENESS */
         @media (max-width: 768px) {
             .inner-frame {
                 padding: 20px 20px !important;
@@ -198,7 +215,6 @@
                 grid-template-columns: 1fr; /* Stacks gallery photos on phone */
             }
         }
-        
     </style>
 </head>
 <body>
@@ -219,6 +235,10 @@
             <p class="body-text">
                 Provide a high-level summary of the MAE 3 Robot here. Explain the competition goals, the mechanisms you designed, and the final outcome of the project.
             </p>
+            
+            <div class="overview-image-container">
+                <img src="robot-assembly-photo.jpg" alt="MAE 3 Robot Full Assembly">
+            </div>
 
             <h2 class="section-title">Key Mechanisms</h2>
             <p class="body-text">Overview of the specific components manufactured for this robot.</p>
@@ -226,13 +246,13 @@
             <div class="process-grid">
                 <div class="process-card">
                     <h3>1. Drivetrain Assembly</h3>
-                    <img src="placeholder1.jpg" alt="Drivetrain" class="process-image">
+                    <img src="drivetrain-photo.jpg" alt="Drivetrain" class="process-image">
                     <p class="image-caption">Description of the drivetrain manufacturing step, noting material choices or specific machining operations.</p>
                 </div>
                 
                 <div class="process-card">
                     <h3>2. Lifting Mechanism</h3>
-                    <img src="placeholder2.jpg" alt="Lifting Mechanism" class="process-image">
+                    <img src="lifting-mech-photo.jpg" alt="Lifting Mechanism" class="process-image">
                     <p class="image-caption">Description of the lifting mechanism. Discuss fixturing required or specific tolerances hit during assembly.</p>
                 </div>
             </div>
