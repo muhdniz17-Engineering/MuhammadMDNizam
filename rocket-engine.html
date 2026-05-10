@@ -34,7 +34,6 @@
             letter-spacing: 10px; 
             text-transform: uppercase;
             border: 3px solid #ffffff; 
-            /* Top 20px | Right 20px | Bottom 20px | Left 30px (fixes letter-spacing off-center issue) */
             padding: 20px 20px 20px 30px !important; 
             display: inline-block; 
             margin-bottom: 15px !important;
@@ -43,7 +42,7 @@
             font-size: 0.9rem;
             letter-spacing: 4px;
             text-transform: uppercase;
-            opacity: 1; /* Solid white */
+            opacity: 1; 
             color: white;
             margin-top: 20px !important;
         }
@@ -70,9 +69,8 @@
             border-bottom: 2px solid #f0f0f0;
             padding-bottom: 10px;
             margin-bottom: 30px;
-            margin-top: 50px; /* Gives space between sections */
+            margin-top: 50px; 
         }
-        /* Remove top margin for the very first section title */
         .inner-frame .section-title:first-child {
             margin-top: 0;
         }
@@ -114,9 +112,9 @@
             justify-content: center;
             color: #888;
             font-size: 0.9rem;
-            object-fit: cover; /* Ensures real images fill the space nicely later */
+            object-fit: cover; 
         }
-.column-text {
+        .column-text {
             font-family: 'Inter', sans-serif;
             font-size: 0.95rem;
             line-height: 1.6;
@@ -124,13 +122,14 @@
             margin-top: 15px;
             margin-bottom: 0;
         }
+
         /* MOBILE RESPONSIVENESS */
         @media (max-width: 768px) {
             .two-column-grid {
-                grid-template-columns: 1fr; /* Stacks columns on small screens */
+                grid-template-columns: 1fr; 
             }
             .inner-frame {
-                padding: 30px 20px; /* Less padding on mobile */
+                padding: 30px 20px; 
             }
         }
     </style>
@@ -155,7 +154,7 @@
                 Explain the core engineering challenges here. Did you do thermal analysis on the nozzle? Flow simulation on the injector plate? Talk about how the CAD models evolved based on the math.
             </p>
 
-           <div class="two-column-grid">
+            <div class="two-column-grid">
                 
                 <div class="grid-column">
                     <h4>SolidWorks CAD Model</h4>
@@ -178,6 +177,35 @@
                 </div>
 
             </div>
-            ```
+            <h2 class="section-title">2. Manufacturing Process</h2>
 
-Save and refresh! Now you will have a clean, easily readable description sitting right under each image box. Let me know if you want to tweak the size or color of that text!
+            <div class="two-column-grid" style="align-items: start;">
+                
+                <div class="grid-column">
+                    <h4>Internal Profiling & Tooling Constraints</h4>
+                    <p class="column-text" style="margin-bottom: 15px;">
+                        Initial process planning focused on utilizing existing shop inventory with a custom tool holder extension. However, this approach lacked the necessary rigidity for the required depth-to-diameter ratio. To resolve this, the following steps were taken:
+                    </p>
+                    <ul class="column-text" style="padding-left: 20px; margin-top: 0;">
+                        <li style="margin-bottom: 10px;"><strong>Tooling Selection:</strong> A <strong>0.75-inch solid carbide boring bar</strong> was procured to maximize the modulus of elasticity and minimize deflection.</li>
+                        <li style="margin-bottom: 10px;"><strong>Design for Manufacturability (DfM) Adjustment:</strong> Through iterative testing, the stable reach limit of the carbide bar was identified at <strong>7.3 inches</strong> before the onset of significant harmonic chatter.</li>
+                        <li><strong>Optimization:</strong> The internal geometry was truncated by 0.6 inches to accommodate the 7.3-inch tool limit. While this resulted in a negligible loss in theoretical performance, it ensured the mechanical integrity and surface finish of the combustion chamber.</li>
+                    </ul>
+                </div>
+
+                <div class="grid-column">
+                    <h4>Machining & Fixturing Strategy</h4>
+                    <p class="column-text" style="margin-bottom: 15px;">
+                        The manufacturing was split across two primary platforms to leverage specific machine strengths:
+                    </p>
+                    <ul class="column-text" style="padding-left: 20px; margin-top: 0;">
+                        <li style="margin-bottom: 10px;"><strong>Primary Profiling (Haas TL-1):</strong> The internal and external profiles were turned on a CNC toolroom lathe. To maintain concentricity during these operations, a custom <strong>machining mandrel</strong> was developed. This fixture utilized tapered locating cones to secure the part between centers, providing the necessary radial support for the thin-walled copper.</li>
+                        <li><strong>Feature Machining (Haas VF-2):</strong> The 50 complex cooling channels were machined using a 3-vertical axis mill. The previously developed mandrel served as the primary work-holding fixture here as well, ensuring that the external grooves remained perfectly clocked and concentric to the internal bore.</li>
+                    </ul>
+                </div>
+
+            </div>
+            </div>
+    </div>
+    </body>
+</html>
