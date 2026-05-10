@@ -116,7 +116,14 @@
             font-size: 0.9rem;
             object-fit: cover; /* Ensures real images fill the space nicely later */
         }
-
+.column-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #555;
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
         /* MOBILE RESPONSIVENESS */
         @media (max-width: 768px) {
             .two-column-grid {
@@ -148,13 +155,16 @@
                 Explain the core engineering challenges here. Did you do thermal analysis on the nozzle? Flow simulation on the injector plate? Talk about how the CAD models evolved based on the math.
             </p>
 
-            <div class="two-column-grid">
+           <div class="two-column-grid">
                 
                 <div class="grid-column">
                     <h4>SolidWorks CAD Model</h4>
                     <div class="column-image">
                         Image Placeholder
                     </div>
+                    <p class="column-text">
+                        Here you can describe specific details about the CAD process. Mention the parameters, tolerances, or any specific features you focused on during the modeling phase.
+                    </p>
                 </div>
 
                 <div class="grid-column">
@@ -162,10 +172,12 @@
                     <div class="column-image">
                         Image Placeholder
                     </div>
+                    <p class="column-text">
+                        Here you can break down the results of the FEA. What were the peak temperatures? Did the simulation show any potential failure points that forced you to change the design?
+                    </p>
                 </div>
 
             </div>
-            </div>
-    </div>
-    </body>
-</html>
+            ```
+
+Save and refresh! Now you will have a clean, easily readable description sitting right under each image box. Let me know if you want to tweak the size or color of that text!
