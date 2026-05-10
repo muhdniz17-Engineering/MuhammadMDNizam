@@ -26,100 +26,100 @@
         /* HERO SECTION STYLING */
         .hero-layer {
             text-align: center;
-            padding: 40px 20px 15px; 
+            padding: 30px 15px 10px; 
         }
         .hero-layer h1 {
             font-family: 'Montserrat', sans-serif;
-            font-size: clamp(1rem, 2.5vw, 1.7rem); 
-            letter-spacing: 5px; 
+            font-size: clamp(0.9rem, 2vw, 1.4rem); 
+            letter-spacing: 4px; 
             text-transform: uppercase;
             border: 2px solid #ffffff; 
-            padding: 10px 10px 10px 15px !important; 
+            padding: 8px 8px 8px 12px !important; 
             display: inline-block; 
-            margin-bottom: 8px !important;
+            margin-bottom: 6px !important;
         }
         .hero-layer p {
-            font-size: 0.75rem; 
+            font-size: 0.7rem; 
             letter-spacing: 2px;
             text-transform: uppercase;
             opacity: 1; 
             color: white;
-            margin-top: 8px !important;
+            margin-top: 6px !important;
         }
 
         /* FLOATING CONTENT CARD STYLING */
         .floating-card-container {
             display: flex;
             justify-content: center;
-            padding: 0 20px 40px;
+            padding: 0 15px 30px;
         }
         .inner-frame {
             background-color: white;
             color: black;
             width: 100%;
-            max-width: 800px; 
-            padding: 25px 35px; 
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            max-width: 750px; 
+            padding: 20px 25px; 
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
         }
         .section-title {
             font-family: 'Montserrat', sans-serif;
-            font-size: 1.05rem; 
+            font-size: 0.95rem; 
             letter-spacing: 1.5px;
             text-transform: uppercase;
             border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 5px;
-            margin-bottom: 12px;
-            margin-top: 30px; 
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+            margin-top: 25px; 
         }
         .inner-frame .section-title:first-child {
             margin-top: 0;
         }
         .about-text {
-            font-size: 0.85rem; 
+            font-size: 0.8rem; 
             line-height: 1.5;
             color: #444;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
         /* TWO COLUMN GRID STYLING */
         .two-column-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 15px; 
-            margin-top: 15px;
-            margin-bottom: 20px;
+            gap: 10px; 
+            margin-top: 10px;
+            margin-bottom: 15px;
         }
         .grid-column {
             border: 1px solid #e0e0e0;
-            padding: 12px; 
+            padding: 10px; 
             background-color: #fafafa;
         }
         .grid-column h4 {
             font-family: 'Inter', sans-serif;
-            font-size: 0.85rem; 
+            font-size: 0.8rem; 
             margin-top: 0;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             color: #111;
         }
         .column-image {
             width: 100%;
             height: auto;
-            min-height: 150px; 
+            min-height: 120px; 
             background-color: #f0f0f0;
             border: 1px dashed #ccc;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #888;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             object-fit: cover; 
         }
         .column-text {
             font-family: 'Inter', sans-serif;
-            font-size: 0.75rem; 
+            font-size: 0.7rem; 
             line-height: 1.4;
             color: #555;
-            margin-top: 8px;
+            margin-top: 6px;
             margin-bottom: 0;
         }
 
@@ -129,7 +129,7 @@
                 grid-template-columns: 1fr; 
             }
             .inner-frame {
-                padding: 20px 15px; 
+                padding: 15px 12px; 
             }
         }
     </style>
@@ -149,9 +149,9 @@
                 Developed for the Regeneratively Cooled Engine (RCE) Challenge, this liquid-propellant engine is designed to produce 800 lbf of thrust for a 90-second burn duration. The assembly features a high-conductivity copper combustion chamber liner to optimize heat transfer, while the structural airframe and components are machined from aluminum.
             </p>
 
-            <div style="margin: 20px 0; text-align: center;">
-                <img src="Exploded drawing.jpeg" alt="Exploded View of the Rocket Engine" style="width: 100%; height: auto; border: 1px solid #ddd; padding: 6px; background-color: #f9f9f9;">
-                <p class="column-text" style="font-size: 0.7rem; color: #777; margin-top: 6px; font-style: italic;">
+            <div style="margin: 15px 0; text-align: center;">
+                <img src="Exploded drawing.jpeg" alt="Exploded View of the Rocket Engine" style="width: 100%; height: auto; border: 1px solid #ddd; padding: 4px; background-color: #f9f9f9;">
+                <p class="column-text" style="font-size: 0.65rem; color: #777; margin-top: 4px; font-style: italic;">
                     Fig 1. Exploded view of the liquid-propellant engine assembly, illustrating the integration of the copper chamber liner and structural aluminum components.
                 </p>
             </div>
@@ -161,9 +161,9 @@
                 Machining the 9-inch copper liner required two setups on the TL-1 lathe and one on the VF-2 mill, utilizing its 4th-axis capabilities. The primary manufacturing challenge was the internal profiling, which necessitated boring to a depth of 7.9 inches with a narrow 1.17-inch minimum diameter, alongside machining 50 external cooling grooves of three varying widths.
             </p>
             
-            <div style="margin: 20px 0; text-align: center;">
-                <img src="Liner drawing.jpeg" alt="Chamber Liner Technical Drawing" style="width: 100%; height: auto; border: 1px solid #ddd; padding: 6px; background-color: #f9f9f9;">
-                <p class="column-text" style="font-size: 0.7rem; color: #777; margin-top: 6px; font-style: italic;">
+            <div style="margin: 15px 0; text-align: center;">
+                <img src="Liner drawing.jpeg" alt="Chamber Liner Technical Drawing" style="width: 100%; height: auto; border: 1px solid #ddd; padding: 4px; background-color: #f9f9f9;">
+                <p class="column-text" style="font-size: 0.65rem; color: #777; margin-top: 4px; font-style: italic;">
                     Fig 2. Final technical drawing of the combustion chamber liner, reflecting updated DfM adjustments and tolerance requirements.
                 </p>
             </div>
@@ -192,23 +192,23 @@
             </p>
 
             <div class="two-column-grid" style="align-items: stretch;">
-                <div class="grid-column" style="border-left: 4px solid #d9534f; background-color: #fffaf9;">
+                <div class="grid-column" style="border-left: 3px solid #d9534f; background-color: #fffaf9;">
                     <h4 style="color: #d9534f;">Challenge: Internal Profiling Rigidity</h4>
                     <p class="column-text">
                         The initial process plan lacked the necessary rigidity for the severe depth-to-diameter ratio of the combustion chamber. Iterative testing revealed significant harmonic chatter past a depth of 7.3 inches, threatening to destroy the internal surface finish.
                     </p>
-                    <h4 style="margin-top: 15px; color: #0275d8;">The Design Change</h4>
+                    <h4 style="margin-top: 12px; color: #0275d8;">The Design Change</h4>
                     <p class="column-text">
                         We procured a <strong>0.75-inch solid carbide boring bar</strong> to maximize the modulus of elasticity. To accommodate the tool's maximum stable reach limit, I <strong>truncated the internal geometry by 0.6 inches</strong>. This DfM adjustment ensured mechanical integrity with a negligible loss to theoretical engine performance.
                     </p>
                 </div>
 
-                <div class="grid-column" style="border-left: 4px solid #d9534f; background-color: #fffaf9;">
+                <div class="grid-column" style="border-left: 3px solid #d9534f; background-color: #fffaf9;">
                     <h4 style="color: #d9534f;">Challenge: Thin-Walled Concentricity</h4>
                     <p class="column-text">
                         Machining 50 complex external cooling channels into thin-walled copper across two different platforms (Haas TL-1 Lathe and VF-2 Mill) posed a severe risk of deformation and loss of concentricity between the internal bore and external grooves.
                     </p>
-                    <h4 style="margin-top: 15px; color: #0275d8;">The Design Change</h4>
+                    <h4 style="margin-top: 12px; color: #0275d8;">The Design Change</h4>
                     <p class="column-text">
                         I designed and implemented a <strong>custom machining mandrel</strong> utilizing tapered locating cones. This fixture secured the part between centers, providing vital radial support during the lathe turning and acting as the primary work-holding fixture for precise 4th-axis clocking on the mill.
                     </p>
