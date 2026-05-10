@@ -143,11 +143,11 @@
             display: block;
         }
 
-        /* 6. PROCESS CARDS (For manufacturing/design steps) */
+        /* 6. PROCESS CARDS (Now 3 Columns!) */
         .process-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 15px;
             margin-top: 20px !important;
         }
 
@@ -156,12 +156,12 @@
             border-radius: 6px; 
             background-color: #fcfcfc;
             box-shadow: 0 4px 12px rgba(0,0,0,0.03); 
-            padding: 15px !important; 
+            padding: 12px !important; 
         }
 
         .process-card h3 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             text-transform: uppercase;
             margin-bottom: 10px !important;
             color: #111;
@@ -177,7 +177,7 @@
         }
 
         .image-caption {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             color: #666; 
             line-height: 1.4;
         }
@@ -209,7 +209,7 @@
                 padding: 20px 20px !important;
             }
             .process-grid {
-                grid-template-columns: 1fr; /* Stacks process cards on phone */
+                grid-template-columns: 1fr; /* Stacks all 3 process cards vertically on phones */
             }
             .gallery-grid {
                 grid-template-columns: 1fr; /* Stacks gallery photos on phone */
@@ -224,7 +224,7 @@
     </nav>
 
     <section class="hero-layer">
-        <h1>MAE 3 ROBOT</h1>
+        <h1>MAE 3 ROBOT COMPETITION</h1>
         <p>Design, Manufacturing & Competition Phase</p>
     </section>
 
@@ -233,11 +233,11 @@
             
             <h2 class="section-title">Project Overview</h2>
             <p class="body-text">
-               We were task to build a robot with the objective to collect balls from the container and move it to the opponents side of the table. there is also bonus point from collectecing the eggs at the middle of the table. We utilize gant chart to organize out team to ensure we are able to meet the deadline of the competition.
-                
+                We were tasked with building a robot with the objective of collecting balls from a container and moving them to the opponent's side of the table. There were also bonus points awarded for collecting eggs from the middle of the table. We utilized a Gantt chart to organize our team and ensure we met the competition deadlines.
+            </p>
             
             <div class="overview-image-container">
-                <img src="Robotassembly.jpg" alt="MAE 3 Robot Full Assembly">
+                <img src="Robotassembly.jpg" alt="MAE 3 Robot Full CAD Assembly">
             </div>
 
             <h2 class="section-title">Key Mechanisms</h2>
@@ -245,15 +245,21 @@
             
             <div class="process-grid">
                 <div class="process-card">
-                    <h3>1. Drivetrain Assembly</h3>
-                    <img src="drivetrain-photo.jpg" alt="Drivetrain" class="process-image">
+                    <h3>1. Drivetrain</h3>
+                    <img src="drivetrain-photo.jpg" alt="Drivetrain Assembly" class="process-image">
                     <p class="image-caption">Description of the drivetrain manufacturing step, noting material choices or specific machining operations.</p>
                 </div>
                 
                 <div class="process-card">
-                    <h3>2. Lifting Mechanism</h3>
-                    <img src="lifting-mech-photo.jpg" alt="Lifting Mechanism" class="process-image">
-                    <p class="image-caption">Description of the lifting mechanism. Discuss fixturing required or specific tolerances hit during assembly.</p>
+                    <h3>2. Pusher Mech</h3>
+                    <img src="pusher-mech-photo.jpg" alt="Pusher Mechanism" class="process-image">
+                    <p class="image-caption">Details on the pusher mechanism design, actuation method, and integration with the chassis.</p>
+                </div>
+
+                <div class="process-card">
+                    <h3>3. Loading Mech</h3>
+                    <img src="loading-mech-photo.jpg" alt="Loading Mechanism" class="process-image">
+                    <p class="image-caption">Description of the loading mechanism. Discuss fixturing required or specific tolerances hit during assembly.</p>
                 </div>
             </div>
 
