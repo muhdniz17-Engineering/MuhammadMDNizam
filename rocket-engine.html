@@ -185,6 +185,39 @@
                     </p>
                 </div>
 
+<h2 class="section-title" style="margin-top: 50px;">3. Challenges & Design Iterations</h2>
+            <p class="about-text">
+                Transitioning from theoretical models to physical hardware presented several manufacturing bottlenecks. To maintain structural integrity and precision, specific design for manufacturability (DfM) adjustments were required on the fly.
+            </p>
+
+            <div class="two-column-grid" style="align-items: stretch;">
+                
+                <div class="grid-column" style="border-left: 4px solid #d9534f; background-color: #fffaf9;">
+                    <h4 style="color: #d9534f;">Challenge: Internal Profiling Rigidity</h4>
+                    <p class="column-text">
+                        The initial process plan lacked the necessary rigidity for the severe depth-to-diameter ratio of the combustion chamber. Iterative testing revealed significant harmonic chatter past a depth of 7.3 inches, threatening to destroy the internal surface finish.
+                    </p>
+                    <h4 style="margin-top: 25px; color: #0275d8;">The Design Change</h4>
+                    <p class="column-text">
+                        We procured a <strong>0.75-inch solid carbide boring bar</strong> to maximize the modulus of elasticity. To accommodate the tool's maximum stable reach limit, I <strong>truncated the internal geometry by 0.6 inches</strong>. This DfM adjustment ensured mechanical integrity with a negligible loss to theoretical engine performance.
+                    </p>
+                </div>
+
+                <div class="grid-column" style="border-left: 4px solid #d9534f; background-color: #fffaf9;">
+                    <h4 style="color: #d9534f;">Challenge: Thin-Walled Concentricity</h4>
+                    <p class="column-text">
+                        Machining 50 complex external cooling channels into thin-walled copper across two different platforms (Haas TL-1 Lathe and VF-2 Mill) posed a severe risk of deformation and loss of concentricity between the internal bore and external grooves.
+                    </p>
+                    <h4 style="margin-top: 25px; color: #0275d8;">The Design Change</h4>
+                    <p class="column-text">
+                        I designed and implemented a <strong>custom machining mandrel</strong> utilizing tapered locating cones. This fixture secured the part between centers, providing vital radial support during the lathe turning and acting as the primary work-holding fixture for precise 4th-axis clocking on the mill.
+                    </p>
+                </div>
+
+            </div>
+
+
+                
             </div>
             <h2 class="section-title">2. Manufacturing Process</h2>
 
