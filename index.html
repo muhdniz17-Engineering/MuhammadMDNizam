@@ -121,20 +121,26 @@
             color: #444;
         }
 
-       /* 5. COMPACT PROJECT GRID */
+
+/* 5. COMPACT PROJECT GRID */
         .project-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
             gap: 20px; 
             margin-top: 25px !important;
             justify-content: center; 
+            justify-items: center; /* <-- This forces the grid columns to center their content */
         }
 
         .project-card {
+            width: 100%;
             max-width: 220px; 
             margin: 0 auto;  
             text-decoration: none;
             color: inherit;
+            display: flex;         /* <-- This turns the link into a flexible block */
+            flex-direction: column;
+            align-items: center;   /* <-- This guarantees the image and text stay centered */
         }
 
         .project-image-container {
