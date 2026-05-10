@@ -26,25 +26,25 @@
         /* HERO SECTION STYLING */
         .hero-layer {
             text-align: center;
-            padding: 80px 20px 40px;
+            padding: 60px 20px 30px; /* Scaled down slightly */
         }
         .hero-layer h1 {
             font-family: 'Montserrat', sans-serif;
-            font-size: clamp(1.5rem, 4vw, 3rem);
-            letter-spacing: 10px; 
+            font-size: clamp(1.3rem, 3.5vw, 2.5rem); /* Scaled down */
+            letter-spacing: 8px; 
             text-transform: uppercase;
             border: 3px solid #ffffff; 
-            padding: 20px 20px 20px 30px !important; 
+            padding: 15px 15px 15px 25px !important; 
             display: inline-block; 
-            margin-bottom: 15px !important;
+            margin-bottom: 10px !important;
         }
         .hero-layer p {
-            font-size: 0.9rem;
-            letter-spacing: 4px;
+            font-size: 0.85rem; /* Scaled down */
+            letter-spacing: 3px;
             text-transform: uppercase;
             opacity: 1; 
             color: white;
-            margin-top: 20px !important;
+            margin-top: 15px !important;
         }
 
         /* FLOATING CONTENT CARD STYLING */
@@ -57,69 +57,69 @@
             background-color: white;
             color: black;
             width: 100%;
-            max-width: 900px;
-            padding: 60px;
+            max-width: 900px; /* Keeps the page from stretching too wide */
+            padding: 40px 50px; /* Scaled down from 60px to tighten up edges */
             box-shadow: 0 20px 40px rgba(0,0,0,0.5);
         }
         .section-title {
             font-family: 'Montserrat', sans-serif;
-            font-size: 1.5rem;
-            letter-spacing: 4px;
+            font-size: 1.35rem; /* Scaled down from 1.5rem */
+            letter-spacing: 3px;
             text-transform: uppercase;
             border-bottom: 2px solid #f0f0f0;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-            margin-top: 50px; 
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            margin-top: 40px; 
         }
         .inner-frame .section-title:first-child {
             margin-top: 0;
         }
         .about-text {
-            font-size: 1rem;
-            line-height: 1.8;
+            font-size: 0.95rem; /* Scaled down from 1rem */
+            line-height: 1.6;
             color: #444;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         /* TWO COLUMN GRID STYLING */
         .two-column-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin-top: 30px;
-            margin-bottom: 40px;
+            gap: 25px; /* Scaled down from 30px */
+            margin-top: 25px;
+            margin-bottom: 35px;
         }
         .grid-column {
             border: 1px solid #e0e0e0;
-            padding: 20px;
+            padding: 15px; /* Scaled down from 20px */
             background-color: #fafafa;
         }
         .grid-column h4 {
             font-family: 'Inter', sans-serif;
-            font-size: 1.1rem;
+            font-size: 1.05rem; /* Scaled down from 1.1rem */
             margin-top: 0;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             color: #111;
         }
         .column-image {
             width: 100%;
             height: auto;
-            min-height: 250px;
+            min-height: 200px; /* Scaled down from 250px */
             background-color: #f0f0f0;
             border: 1px dashed #ccc;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #888;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             object-fit: cover; 
         }
         .column-text {
             font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            line-height: 1.6;
+            font-size: 0.85rem; /* Scaled down from 0.95rem */
+            line-height: 1.5;
             color: #555;
-            margin-top: 15px;
+            margin-top: 12px;
             margin-bottom: 0;
         }
 
@@ -149,11 +149,9 @@
                 Developed for the Regeneratively Cooled Engine (RCE) Challenge, this liquid-propellant engine is designed to produce 800 lbf of thrust for a 90-second burn duration. The assembly features a high-conductivity copper combustion chamber liner to optimize heat transfer, while the structural airframe and components are machined from aluminum.
             </p>
 
-            <div style="margin: 40px 0; text-align: center;">
-                
+            <div style="margin: 30px 0; text-align: center;">
                 <img src="Exploded drawing.jpeg" alt="Exploded View of the Rocket Engine" style="width: 100%; height: auto; border: 1px solid #ddd; padding: 10px; background-color: #f9f9f9;">
-                
-                <p class="column-text" style="font-size: 0.85rem; color: #777; margin-top: 10px; font-style: italic;">
+                <p class="column-text" style="font-size: 0.8rem; color: #777; margin-top: 10px; font-style: italic;">
                     Fig 1. Exploded view of the liquid-propellant engine assembly, illustrating the integration of the copper chamber liner and structural aluminum components.
                 </p>
             </div>
@@ -163,15 +161,14 @@
                 Machining the 9-inch copper liner required two setups on the TL-1 lathe and one on the VF-2 mill, utilizing its 4th-axis capabilities. The primary manufacturing challenge was the internal profiling, which necessitated boring to a depth of 7.9 inches with a narrow 1.17-inch minimum diameter, alongside machining 50 external cooling grooves of three varying widths.
             </p>
             
-            <div style="margin: 40px 0; text-align: center;">
+            <div style="margin: 30px 0; text-align: center;">
                 <img src="Liner drawing.jpeg" alt="Chamber Liner Technical Drawing" style="width: 100%; height: auto; border: 1px solid #ddd; padding: 10px; background-color: #f9f9f9;">
-                <p class="column-text" style="font-size: 0.85rem; color: #777; margin-top: 10px; font-style: italic;">
+                <p class="column-text" style="font-size: 0.8rem; color: #777; margin-top: 10px; font-style: italic;">
                     Fig 2. Final technical drawing of the combustion chamber liner, reflecting updated DfM adjustments and tolerance requirements.
                 </p>
             </div>
             
             <div class="two-column-grid">
-                
                 <div class="grid-column">
                     <h4>Final profiling operation setup</h4>
                     <img class="column-image" src="TL-1 setup.jpeg" alt="TL-1 final setup">
@@ -187,14 +184,37 @@
                         Fixtured with custom slugs on both ends and a through-rod for stability, the 50 external cooling grooves were machined via slitting. The part was precisely clocked utilizing the 4th-axis capabilities of the VF-2.
                     </p>
                 </div>
+            </div>
 
-            </div> <h2 class="section-title" style="margin-top: 50px;">Challenges & Design Iterations</h2>
+            <h2 class="section-title">2. Manufacturing of Engine Jacket</h2>
+            <p class="about-text">
+                [Insert your overview text for the engine jacket manufacturing here. Explain the material choice (e.g., aluminum), the primary machining operations utilized, and the core function of the jacket in routing the coolant.]
+            </p>
+            
+            <div class="two-column-grid">
+                <div class="grid-column">
+                    <h4>[First Operation Title e.g., Primary Turning]</h4>
+                    <img class="column-image" src="jacket-setup1.jpg" alt="Engine Jacket Setup 1">
+                    <p class="column-text">
+                        [Insert a description of the first major manufacturing step for the engine jacket. Discuss any specific fixturing required or tolerances hit.]
+                    </p>
+                </div>
+
+                <div class="grid-column">
+                    <h4>[Second Operation Title e.g., Port Machining]</h4>
+                    <img class="column-image" src="jacket-setup2.jpg" alt="Engine Jacket Setup 2">
+                    <p class="column-text">
+                        [Insert a description of the second major manufacturing step, such as milling the coolant inlets/outlets or final finishing operations.]
+                    </p>
+                </div>
+            </div> 
+
+            <h2 class="section-title">3. Challenges & Design Iterations</h2>
             <p class="about-text">
                 Transitioning from theoretical models to physical hardware presented several manufacturing bottlenecks. To maintain structural integrity and precision, specific design for manufacturability (DfM) adjustments were required on the fly.
             </p>
 
             <div class="two-column-grid" style="align-items: stretch;">
-                
                 <div class="grid-column" style="border-left: 4px solid #d9534f; background-color: #fffaf9;">
                     <h4 style="color: #d9534f;">Challenge: Internal Profiling Rigidity</h4>
                     <p class="column-text">
@@ -216,7 +236,6 @@
                         I designed and implemented a <strong>custom machining mandrel</strong> utilizing tapered locating cones. This fixture secured the part between centers, providing vital radial support during the lathe turning and acting as the primary work-holding fixture for precise 4th-axis clocking on the mill.
                     </p>
                 </div>
-
             </div>
 
         </div> </div> </body>
