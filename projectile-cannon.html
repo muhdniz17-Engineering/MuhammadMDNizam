@@ -129,13 +129,12 @@
 
         /* 5. OVERVIEW IMAGE */
         .overview-image-container {
-            width: 100%;
-            margin-top: 15px !important;
-            margin-bottom: 35px !important; 
+            max-width: 60%; /* Limit the maximum width of the overview image to scale it down */
+            margin: 20px auto 40px auto !important; /* Center the container with good vertical spacing */
         }
         
         .overview-image-container img {
-            width: 100%;
+            width: 100%; /* Image fills its smaller, centered container */
             height: auto;
             border-radius: 6px;
             border: 1px solid #eaeaea; 
@@ -143,7 +142,7 @@
             display: block;
         }
 
-        /* 6. PROCESS CARDS GRID */
+        /* 6. PROCESS CARDS GRID (for the Four Basics section) */
         .process-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -174,13 +173,40 @@
             line-height: 1.4;
         }
 
+        /* New section grid for drawings and documentation */
+        .drawing-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px; 
+            margin-top: 15px !important;
+            margin-bottom: 35px !important;
+        }
+        
+        .drawing-item {
+            border-radius: 6px;
+            border: 1px solid #eaeaea; 
+            background-color: white; /* drawings are white paper pages */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            padding: 10px !important; /* card padding for spacing */
+        }
+        
+        .drawing-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            display: block;
+        }
+
         /* 7. MOBILE RESPONSIVENESS */
         @media (max-width: 768px) {
             .inner-frame {
                 padding: 20px 20px !important;
             }
-            .process-grid {
-                grid-template-columns: 1fr;
+            .process-grid, .drawing-grid {
+                grid-template-columns: 1fr; /* stack cards and drawings vertically on small screens */
+            }
+            .overview-image-container {
+                max-width: 80%; /* slightly bigger on mobile */
             }
         }
     </style>
@@ -265,6 +291,24 @@
                     <span><strong>Safety Enforcement:</strong> Actively monitored the shop floor to enforce strict safety protocols, ensuring all machinery was operated correctly to prevent accidents and equipment damage.</span>
                 </li>
             </ul>
+
+            <h2 class="section-title">Drawings & Documentation</h2>
+            <p class="body-text">Complete technical documentation for the course curriculum, demonstrating proficiency in engineering drawing standards.</p>
+            
+            <div class="drawing-grid">
+                <div class="drawing-item">
+                    <img src="Kinback_drawing.png" alt="Kinback component drawing">
+                </div>
+                <div class="drawing-item">
+                    <img src="Kinfront_drawing.png" alt="Kinfront component drawing">
+                </div>
+                <div class="drawing-item">
+                    <img src="Lathe_Pin_drawing.png" alt="Lathe pin drawing">
+                </div>
+                <div class="drawing-item">
+                    <img src="Base_and_Upright_drawing.png" alt="Cannon base plate and upright drawing">
+                </div>
+            </div>
 
         </div> 
     </div> 
