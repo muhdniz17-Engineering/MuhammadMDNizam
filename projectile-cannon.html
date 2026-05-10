@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senior design project tutor</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <title>Senior Design Project Tutor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
     <style>
+        /* FOUNDATION */
+        * { margin: 0 !important; padding: 0 !important; box-sizing: border-box !important; }
+
         html, body {
             width: 100%;
             min-height: 100vh !important; 
@@ -19,10 +22,46 @@
             margin: 0;
             padding: 0;
         }
+
+        /* COMPACT NAV */
+        .nav-layer {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 45px; 
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(15px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5% !important;
+            z-index: 1000;
+        }
+
+        .nav-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            letter-spacing: 2px;
+            font-size: 0.6rem; 
+            border: 1px solid white; 
+            padding: 4px 8px !important;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s ease;
+        }
+
+        .nav-logo:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* HERO */
         .hero-layer {
             text-align: center;
-            padding: 80px 20px 40px;
+            padding: 100px 20px 40px;
         }
+
         .hero-layer h1 {
             font-family: 'Montserrat', sans-serif;
             font-size: clamp(1.5rem, 4vw, 3rem);
@@ -33,6 +72,7 @@
             display: inline-block; 
             margin-bottom: 15px !important;
         }
+
         .hero-layer p {
             font-size: 0.9rem;
             letter-spacing: 4px;
@@ -41,11 +81,14 @@
             color: white;
             margin-top: 20px !important;
         }
+
+        /* THE FRAME */
         .floating-card-container {
             display: flex;
             justify-content: center;
             padding: 0 20px 60px;
         }
+
         .inner-frame {
             background-color: white;
             color: black;
@@ -54,6 +97,7 @@
             padding: 60px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.5);
         }
+
         .section-title {
             font-family: 'Montserrat', sans-serif;
             font-size: 1.5rem;
@@ -61,28 +105,148 @@
             text-transform: uppercase;
             border-bottom: 2px solid #f0f0f0;
             padding-bottom: 10px;
-            margin-bottom: 30px;
+            margin-top: 40px !important;
+            margin-bottom: 20px !important;
         }
+
+        .inner-frame .section-title:first-child {
+            margin-top: 0 !important;
+        }
+
         .about-text {
             font-size: 1rem;
             line-height: 1.8;
             color: #444;
+            margin-bottom: 20px !important;
+        }
+
+        /* OVERVIEW IMAGE */
+        .overview-image-container {
+            width: 100%;
+            margin-top: 20px !important;
+            margin-bottom: 40px !important; 
+        }
+        
+        .overview-image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            border: 1px solid #eaeaea; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            display: block;
+        }
+
+        /* PROCESS CARDS GRID */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px !important;
+        }
+
+        .process-card {
+            border: 1px solid #eaeaea;
+            border-radius: 6px; 
+            background-color: #fcfcfc;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03); 
+            padding: 20px !important; 
+        }
+
+        .process-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem; 
+            text-transform: uppercase;
+            margin-bottom: 12px !important;
+            color: #111;
+        }
+
+        .image-caption {
+            font-size: 0.9rem;
+            color: #555; 
+            line-height: 1.6;
+        }
+
+        /* MOBILE RESPONSIVENESS */
+        @media (max-width: 768px) {
+            .inner-frame {
+                padding: 30px 20px !important;
+            }
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-layer h1 {
+                letter-spacing: 5px;
+            }
         }
     </style>
 </head>
 <body>
+
+    <nav class="nav-layer">
+        <a href="index.html" class="nav-logo">&larr; BACK TO PORTFOLIO</a>
+    </nav>
+
     <section class="hero-layer">
-        <h1>SENIOR DESIGN PROJECT TUTOR</h1>
-        <p>TEACH, CONSULT AND MACHINE MAINTAINANCE</p>
+        <h1>SENIOR DESIGN TUTOR</h1>
+        <p>Mentorship, Consultation & Machine Maintenance</p>
     </section>
 
     <div class="floating-card-container">
         <div class="inner-frame">
-            <h2 class="section-title">Project Overview</h2>
+            
+            <h2 class="section-title">The Foundation: Projectile Cannon</h2>
             <p class="about-text">
-                Provide a high-level summary of the Projectile Cannon here. What were the target metrics? What materials were used, and how did it perform during testing?
+                My journey into engineering mentorship began from the perspective of a student taking this very course. Designing and machining a projectile cannon served as my introduction to rigorous mechanical design, requiring tight-tolerance manual turning on the lathe, structural assembly, and adherence to specific performance metrics. 
             </p>
-        </div>
-    </div>
+            <p class="about-text">
+                Successfully executing this project from raw stock to a functional prototype proved my proficiency in fundamental machining and design. Experiencing the challenges of the capstone firsthand allowed me to deeply empathize with future students, giving me the technical foundation necessary to transition from a student into a leadership role.
+            </p>
+            
+            <div class="overview-image-container">
+                <img src="cannon.jpg" alt="Machined Projectile Cannon Component">
+            </div>
+
+            <h2 class="section-title">Mentorship & Consultation</h2>
+            <p class="about-text">
+                As a Senior Design Project Tutor, my responsibilities shifted from individual contributor to engineering consultant. I became a dedicated resource for students navigating the most critical phase of their engineering degrees, guiding them through both the theoretical and highly practical aspects of their capstone projects.
+            </p>
+            
+            <div class="process-grid">
+                
+                <div class="process-card">
+                    <h3>Teaching the Basics</h3>
+                    <p class="image-caption">A major aspect of my role was bridging the gap between classroom theory and real-world application. I taught students the foundational skills necessary to safely operate manual lathes and mills, proper tooling selection, calculating feeds and speeds, and best practices for creating manufacturable CAD models and drawings.</p>
+                </div>
+
+                <div class="process-card">
+                    <h3>Advising & Consultation</h3>
+                    <p class="image-caption">Beyond teaching hard skills, I acted as a technical consultant for senior design teams. I reviewed their initial concepts, advised on material selection, and conducted design-for-manufacturing (DFM) reviews to ensure their ideas could be realistically fabricated within their timelines and budgets.</p>
+                </div>
+
+            </div>
+
+            <h2 class="section-title">Machine Shop Maintenance</h2>
+            <p class="about-text">
+                Teaching effectively requires a highly functional and safe environment. Beyond my direct interactions with students, I developed crucial skills in maintaining and managing an operational machine shop. 
+            </p>
+
+            <ul style="list-style-type: none; padding: 0 !important; margin-top: 20px !important;">
+                <li style="background-color: #fcfcfc; border: 1px solid #eaeaea; padding: 15px !important; margin-bottom: 12px !important; border-radius: 6px; font-size: 0.95rem; color: #444; display: flex; align-items: flex-start; gap: 15px; box-shadow: 0 2px 6px rgba(0,0,0,0.02); line-height: 1.6;">
+                    <span style="font-size: 1.2rem; margin-top: 2px;">🔧</span> 
+                    <span><strong>Equipment Calibration:</strong> Performed routine maintenance, including tramming mills, adjusting lathe gibs, and ensuring all manual machinery held tight tolerances for student use.</span>
+                </li>
+                <li style="background-color: #fcfcfc; border: 1px solid #eaeaea; padding: 15px !important; margin-bottom: 12px !important; border-radius: 6px; font-size: 0.95rem; color: #444; display: flex; align-items: flex-start; gap: 15px; box-shadow: 0 2px 6px rgba(0,0,0,0.02); line-height: 1.6;">
+                    <span style="font-size: 1.2rem; margin-top: 2px;">⚙️</span> 
+                    <span><strong>Tooling Management:</strong> Inspected, organized, and replaced cutting tools, drills, taps, and inserts to ensure students always had access to sharp, safe, and appropriate equipment.</span>
+                </li>
+                <li style="background-color: #fcfcfc; border: 1px solid #eaeaea; padding: 15px !important; border-radius: 6px; font-size: 0.95rem; color: #444; display: flex; align-items: flex-start; gap: 15px; box-shadow: 0 2px 6px rgba(0,0,0,0.02); line-height: 1.6;">
+                    <span style="font-size: 1.2rem; margin-top: 2px;">🦺</span> 
+                    <span><strong>Safety Enforcement:</strong> Actively monitored the shop floor to enforce strict safety protocols, ensuring all machinery was operated correctly to prevent accidents and equipment damage.</span>
+                </li>
+            </ul>
+
+        </div> 
+    </div> 
+
 </body>
 </html>
