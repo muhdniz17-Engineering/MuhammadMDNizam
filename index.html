@@ -224,7 +224,21 @@
                 grid-template-columns: 1fr; /* 1 photo per row on phones */
             }
         }
-        
+.click-cue {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.6rem;
+            color: #666; /* Subtle gray */
+            margin-top: 6px !important;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+
+        /* Makes the text turn black when they hover over the card */
+        .project-card:hover .click-cue {
+            color: #000; 
+        }
     </style>
     
 </head>
@@ -256,6 +270,7 @@
                         <img src="rocket-teaser.jpeg" alt="Rocket Engine">
                     </div>
                     <h3 class="project-title">MOONSHINE B-2 MANUFACTURING</h3>
+                    <span class="click-cue">View Project &rarr;</span> </a>
                 </a>
 
                 <a href="mae3-robot.html" class="project-card">
@@ -263,6 +278,7 @@
                         <img src="MAE3ROBOT.jpg" alt="MAE 3 Robot">
                     </div>
                     <h3 class="project-title">MAE 3 ROBOT COMPETITION</h3>
+                    <span class="click-cue">View Project &rarr;</span> </a>
                 </a>
 
                 <a href="projectile-cannon.html" class="project-card">
@@ -270,6 +286,7 @@
                         <img src="cannon-image.jpeg" alt="Projectile Cannon">
                     </div>
                     <h3 class="project-title">PROJECTILE CANNON</h3>
+                    <span class="click-cue">View Project &rarr;</span> </a>
                 </a>
                 
             </div> 
