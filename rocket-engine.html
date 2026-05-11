@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moonshine Block-2 Manufacturing</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <title>Moonshine Block-2 Manufacturing | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     
     <style>
-        /* BACKGROUND AND GLOBAL TEXT */
+        /* 1. FOUNDATION */
+        * { margin: 0 !important; padding: 0 !important; box-sizing: border-box !important; }
+
         html, body {
             width: 100%;
             min-height: 100vh !important; 
@@ -19,15 +20,52 @@
             font-family: 'Inter', sans-serif;
             color: white;
             overflow-x: hidden;
-            margin: 0;
-            padding: 0;
         }
 
-        /* HERO SECTION STYLING */
-        .hero-layer {
-            text-align: center;
-            padding: 30px 15px 10px; 
+        /* 2. COMPACT NAV WITH BACK BUTTON */
+        .nav-layer {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 45px; 
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(15px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5% !important;
+            z-index: 1000;
         }
+
+        .nav-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            letter-spacing: 2px;
+            font-size: 0.6rem; 
+            border: 1px solid white; 
+            padding: 4px 8px !important;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s ease;
+        }
+
+        .nav-logo:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* 3. HERO */
+        .hero-layer {
+            height: 40vh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 40px !important; 
+        }
+
         .hero-layer h1 {
             font-family: 'Montserrat', sans-serif;
             font-size: clamp(0.9rem, 2vw, 1.4rem); 
@@ -36,47 +74,55 @@
             border: 2px solid #ffffff; 
             padding: 8px 8px 8px 12px !important; 
             display: inline-block; 
-            margin-bottom: 6px !important;
+            margin-bottom: 8px !important;
         }
+
         .hero-layer p {
             font-size: 0.7rem; 
             letter-spacing: 2px;
             text-transform: uppercase;
-            opacity: 1; 
             color: white;
-            margin-top: 6px !important;
+            margin-top: 8px !important;
         }
 
-        /* FLOATING CONTENT CARD STYLING */
+        /* 4. THE FRAME */
         .floating-card-container {
+            width: 100%;
             display: flex;
             justify-content: center;
-            padding: 0 15px 30px;
+            padding-bottom: 40px !important; 
         }
+
         .inner-frame {
-            background-color: white;
-            color: black;
-            width: 100%;
+            background-color: #ffffff !important;
+            color: #000 !important;
+            width: 90%; 
             max-width: 750px; 
-            padding: 20px 25px; 
-            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            padding: 30px 40px !important; 
+            box-shadow: 0 15px 30px rgba(0,0,0,0.5); 
+            position: relative;
+            z-index: 5;
         }
+
         .section-title {
             font-family: 'Montserrat', sans-serif;
             font-size: 0.95rem; 
+            text-align: left; 
             letter-spacing: 1.5px;
             text-transform: uppercase;
+            margin-bottom: 15px !important;
+            margin-top: 35px !important;
             border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 4px;
-            margin-bottom: 10px;
-            margin-top: 25px; 
+            padding-bottom: 5px;
         }
+        
         .inner-frame .section-title:first-child {
-            margin-top: 0;
+            margin-top: 0 !important;
         }
+
         .about-text {
+            line-height: 1.6; 
             font-size: 0.8rem; 
-            line-height: 1.5;
             color: #444;
             margin-bottom: 12px;
         }
@@ -136,6 +182,10 @@
 </head>
 <body>
     
+    <nav class="nav-layer">
+        <a href="index.html" class="nav-logo">&larr; BACK TO PORTFOLIO</a>
+    </nav>
+
     <section class="hero-layer">
         <h1>MOONSHINE BLOCK-2 MANUFACTURING</h1>
         <p>Design, Manufacturing & Testing Phase</p>
@@ -218,6 +268,7 @@
             <h2 class="section-title">2. Manufacturing of Engine Jacket</h2>
             <p class="about-text">
                 Due to the extreme length of the part, we were unable to machine the original design as a single continuous piece. Instead, we adapted by cutting the jacket into two separate sections and machining them independently. Additionally, all ports and bolt hole patterns were executed manually on the mill.
+            </p>
 
             <div style="margin: 15px 0; text-align: center;">
                 <img src="Jacket drawing.jpeg" alt="Engine Jacket Technical Drawing" style="width: 100%; height: auto; border: 1px solid #ddd; padding: 4px; background-color: #f9f9f9;">
@@ -244,5 +295,7 @@
                 </div>
             </div> 
 
-        </div> </div> </body>
+        </div> 
+    </div> 
+</body>
 </html>
